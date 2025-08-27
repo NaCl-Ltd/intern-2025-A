@@ -28,6 +28,12 @@ class MicropostsController < ApplicationController
     @microposts = Micropost.latest(current_user)
   end
 
+  def pin
+    current_user.update(pinned_micropost_id: params[:id])
+    flash[:success] = "Micropost pinned!"
+    redirect_to request.referrer
+  end
+
   private
 
     def micropost_params
