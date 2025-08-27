@@ -4,6 +4,7 @@
   <% if current_user.admin? && !current_user?(user) %>
     | <%= link_to "delete", user, data: { "turbo-method": :delete,
                                           turbo_confirm: "You sure?" } %>
+
   <div class="stats">
     <a href="<%= following_user_path(user) %>">
       <strong id="following" class="stat">
