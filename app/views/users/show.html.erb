@@ -15,7 +15,7 @@
   <div class="col-md-8">
     <%= render 'follow_form' if logged_in? %>
     <% if @user.microposts.any? %>
-      <h3>Microposts (<%= @user.microposts.count %>)</h3>
+      <h3> <%= t("links.Microposts") %> (<%= @user.microposts.count %>)</h3>
       <% if @pinned_micropost != nil %>
         <%= render partial: "shared/pinned", locals: { user: @user, micropost: @pinned_micropost } %>
       <% end %>

@@ -1,3 +1,17 @@
 ja:
   links:
+    Home: "ホーム"
     latest: "最新"
+    Help: "ヘルプ"
+    Users: "ユーザー"
+    Account: "アカウント"
+    Micropost Feed: "マイクロポストフィード"
+    Microposts: "マイクロポスト"
+    All users: "すべてのユーザー"
+    Update your profile: "プロフィールを更新する"
+    Name: "名前"
+    Email: "Email"
+    Password: "パスワード"
+    Confirmation: "確認"
+    introduction: "導入"
+    SAMPLE APP: "サンプルアプリ"

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  scope '(:locale)', locale: /#{I18n.available_locales.map(&:to_s).join('|')}/ , defaults: { locale: "ja" } do  
+
   get 'password_resets/new'
   get 'password_resets/edit'
   root   "static_pages#home"
