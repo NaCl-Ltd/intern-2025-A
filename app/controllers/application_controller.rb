@@ -1,7 +1,15 @@
 class ApplicationController < ActionController::Base
   include SessionsHelper
+  around_action :switch_locale
 
   private
+  def switch_locale(&action)
+      I18n.with_locale(locale, &action)
+  end
+
+  def locale
+    @locale ||= params[:locale] || I18n.default_locale
+  end
 
     # ユーザーのログインを確認する
     def logged_in_user

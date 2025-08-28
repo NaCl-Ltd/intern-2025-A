@@ -31,3 +31,18 @@
 
 en:
   hello: "Hello world"
+  links:
+   Home: "Home"
+   latest: "latest"
+   Help: "Help"
+   Users: "Users"
+   Account: "Account"
+   Micropost Feed: "Micropost Feed"
+   Microposts: "Microposts"
+   All users: "All users"
+   Update your profile: "Update your profile"
+   Name: "Name"
+   Email: "Email"
+   Password: "Password"
+   Confirmation: "Confirmation"
+   introduction: "introduction"

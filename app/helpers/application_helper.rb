@@ -9,4 +9,11 @@ module ApplicationHelper
       "#{page_title} | #{base_title}"                 # 文字列の結合
     end
   end
+
+  def i18n_url_for(options)
+    if options[:locale] == I18n.default_locale
+      options[:locale] = nil
+    end
+    url_for(options.permit!)
+  end
 end
