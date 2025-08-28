@@ -13,7 +13,9 @@
     </aside>
     <div class="col-md-8">
       <h3>Micropost Feed</h3>
-      <%= render partial: "shared/pinned", locals: { user: @user, micropost: @pinned_micropost } %>
+      <% if @pinned_micropost != nil %>
+        <%= render partial: "shared/pinned", locals: { user: @user, micropost: @pinned_micropost } %>
+      <% end %>
       <%= render 'shared/feed' %>
     </div>
   </div>
